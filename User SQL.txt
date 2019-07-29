@@ -1,0 +1,30 @@
+USE [ladybug_sis]
+GO
+
+SELECT * FROM [tblUser]
+
+INSERT INTO [dbo].[tblUser]
+           ([companyID]
+           ,[email]
+           ,[firstName]
+           ,[gender]
+           ,[lastName]
+           ,[mobile]
+           ,[password]
+           ,[phone]
+           ,[userName]
+           ,[userProfileID])
+     VALUES
+           (1
+           ,'rowelcasulla@gmail.com'
+           ,'Rowel'
+           ,'Male'
+           ,'Casulla'
+           ,'09274685604'
+           ,'1234'
+           ,null
+           ,'weweng'
+           ,1)
+GO
+
+
