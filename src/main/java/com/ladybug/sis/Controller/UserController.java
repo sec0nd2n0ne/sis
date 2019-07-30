@@ -9,24 +9,25 @@ import javax.validation.Valid;
 import java.util.List;
 
 @RestController
-@RequestMapping("/api/v1")
+@RequestMapping("/api/user")
 public class UserController {
 
     @Autowired
     UserService userService;
 
-    @GetMapping(value = "/user")
+    @GetMapping(value = "/")
     public List<User> findAll(){
         return userService.findAll();
     }
 
-    @GetMapping("/user/{id}")
+    @GetMapping("/{id}")
     public User findById(@PathVariable(value = "id") Long userID){
         return userService.findById(userID);
     }
 
-    @PostMapping("/user")
+    @PostMapping("/new")
     public User addUser(@Valid @RequestBody User user){
         return userService.addUser(user);
     }
+
 }
