@@ -21,8 +21,13 @@ public class UserService {
         return userRepository.findById(userID).orElse(null);
     }
 
-    public User addUser(User user){
+    public User addOrUpdateUser(User user){
         return userRepository.save(user);
     }
+
+    public void deleteUser(Long userID){
+        userRepository.deleteById(userID);
+    }
+
 }
 
