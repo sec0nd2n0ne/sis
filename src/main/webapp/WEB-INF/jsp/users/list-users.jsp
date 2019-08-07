@@ -41,7 +41,7 @@
                 <div class="sidebar-brand-icon rotate-n-15">
                     <i class="fas fa-bug"></i>
                 </div>
-                <div class="sidebar-brand-text mx-3">LADYBUG <sup>SIS</sup></div>
+                <div class="sidebar-brand-text mx-3">Ladybug SIS<sup> v1</sup></div>
             </a>
 
             <!-- Divider -->
