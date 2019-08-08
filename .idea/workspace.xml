@@ -2,14 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="77e220b7-f238-47d7-9b17-4e9b0da60f64" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/common/footer.jspf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/common/header.jspf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/common/navigation.jspf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ladybug/sis/Controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ladybug/sis/Controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ladybug/sis/Model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ladybug/sis/Model/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/users/list-users.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/users/list-users.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/users/user.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/users/user.jsp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -121,7 +114,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/users/list-users.jsp">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="271">
-              <caret line="366" column="28" selection-start-line="366" selection-start-column="28" selection-end-line="366" selection-end-column="28" />
+              <caret line="386" column="44" selection-start-line="386" selection-start-column="44" selection-end-line="386" selection-end-column="44" />
               <folding>
                 <element signature="e#3653#3659#0#HTML" expanded="true" />
               </folding>
@@ -462,11 +455,18 @@
       <option name="project" value="LOCAL" />
       <updated>1565192254856</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Bootstrap Template: User 20190808">
+      <created>1565269699303</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1565269699303</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="48168000" />
+    <option name="totallyTimeSpent" value="48669000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -523,7 +523,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="A little update 20190730" />
     <MESSAGE value="Bootstrap Template: User 20190807" />
-    <option name="LAST_COMMIT_MESSAGE" value="Bootstrap Template: User 20190807" />
+    <MESSAGE value="Bootstrap Template: User 20190808" />
+    <option name="LAST_COMMIT_MESSAGE" value="Bootstrap Template: User 20190808" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/main/java/com/ladybug/sis/Controller.java" />
@@ -732,7 +733,7 @@
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/users/list-users.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="271">
-          <caret line="366" column="28" selection-start-line="366" selection-start-column="28" selection-end-line="366" selection-end-column="28" />
+          <caret line="386" column="44" selection-start-line="386" selection-start-column="44" selection-end-line="386" selection-end-column="44" />
           <folding>
             <element signature="e#3653#3659#0#HTML" expanded="true" />
           </folding>
