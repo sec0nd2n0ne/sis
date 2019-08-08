@@ -4,15 +4,19 @@ import com.ladybug.sis.Model.User;
 import com.ladybug.sis.Service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.ModelMap;
+import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
 import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
 
+import javax.validation.Valid;
 import java.net.URI;
 import java.net.URISyntaxException;
 import java.util.List;
 
-@RestController
+@Controller
 @RequestMapping("/users")
 public class UserController {
 
@@ -27,11 +31,40 @@ public class UserController {
 
     }
 
-    @GetMapping("/{id}")
-    public ModelAndView findById(@PathVariable(value = "id") Long userID){
-        ModelAndView modelAndView = new ModelAndView("users/user");
-        modelAndView.addObject("user", userService.findById(userID));
-        return modelAndView;
+    @GetMapping("/add")
+    public String showAddUserPage(ModelMap model){
+        model.addAttribute("user", new User());
+        return "users/user";
+    }
+
+    @PostMapping("/add")
+    public String addUser(@Valid User user, BindingResult result){
+        if (result.hasErrors()){
+            return "user";
+        }
+        userService.addOrUpdateUser(user);
+        return "redirect:/users";
+    }
+
+    @GetMapping("/update")
+    public String showUpdateUserPage(@RequestParam(value = "id") Long userID, ModelMap model){
+        model.addAttribute("user", userService.findById(userID));
+        return "users/user";
+    }
+
+    @PostMapping("/update")
+    public String updateUser(@Valid User user, BindingResult result){
+        if (result.hasErrors()){
+            return "user";
+        }
+        userService.addOrUpdateUser(user);
+        return "redirect:/users";
+    }
+
+    @GetMapping("/delete")
+    public String deleteUser(@RequestParam(value = "id") Long userID){
+        userService.deleteUser(userID);
+        return "redirect:/users";
     }
 
 //    @PostMapping("/")

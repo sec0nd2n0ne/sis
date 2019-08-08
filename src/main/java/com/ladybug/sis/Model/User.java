@@ -36,4 +36,20 @@ public class User {
     @Column(name = "companyID")
     public long companyID;
 
+    public User(long userProfileID, String userName, String password, String email, String firstName, String lastName, String phone, String mobile, String gender, long companyID) {
+        this.userProfileID = userProfileID;
+        this.userName = userName;
+        this.password = password;
+        this.email = email;
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.phone = phone;
+        this.mobile = mobile;
+        this.gender = gender;
+        this.companyID = companyID;
+    }
+
+    public User() {
+    }
 }
+
