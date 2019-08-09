@@ -36,6 +36,7 @@ public class User {
     @Column(name = "companyID")
     public long companyID;
 
+
     public User(long userProfileID, String userName, String password, String email, String firstName, String lastName, String phone, String mobile, String gender, long companyID) {
         this.userProfileID = userProfileID;
         this.userName = userName;
