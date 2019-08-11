@@ -1,8 +1,10 @@
-<html>
-<head>
-    <title>Home</title>
-</head>
-<body>
+<%@include file="/WEB-INF/jsp/common/header.jspf"%>
 
-</body>
-</html>
+<!-- Begin Page Content -->
+<div class="container-fluid">
+Welcome to home page!
+
+</div>
+<!-- /.container-fluid -->
+
+<%@include file="/WEB-INF/jsp/common/footer.jspf"%>
